@@ -1,0 +1,35 @@
+type Query {
+  getBars(location: String!): [Bar!]
+  getClientId: String!
+  getUserGoing(ids: [String!]!, token: String!): [String]!
+}
+
+type Mutation {
+  login(provider: String!, code: String!): LoggedInUser
+  logout(token: String): Int
+  userGotoVenue(id: String!, token: String!, negate: Boolean = false): Int!
+}
+
+type Bar {
+  id: String!
+  name: String
+  url: String
+  rating: Float
+  price: String
+  image_url: String
+  going: Int
+  location: Location
+}
+
+type Location {
+  address1: String
+  address2: String
+  address3: String
+  city: String
+}
+
+type LoggedInUser {
+  id: Int!
+  token: String!
+  gh_name: String
+}

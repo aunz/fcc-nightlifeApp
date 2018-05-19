@@ -1,0 +1,67 @@
+@import 'normalize.css/normalize.css';
+@import 'basscss/css/basscss.min.css';
+@import './fontello/css/fontello.css';
+@import './fontello/css/animation.css';
+@import './variables.css';
+
+* {
+  /*color: #333;*/
+  color: #fff;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  /*position: relative;*/
+  background: var(--color1);
+  padding: 0 1rem 3rem 1rem;
+}
+
+.color1 { color: var(--color1) }
+.color1-l { color: var(--color1-l) }
+.color1-d { color: var(--color1-d) }
+.color-inherit { color: inherit }  /* used in: header */
+.white { color: #fff }
+.silver { color: #aaa }
+.yellow { color:  #FFDC00 }
+.red { color: #FF4136 }
+.bg-color1 { background-color: var(--color1) }
+.bg-color1-l { background-color: var(--color1-l) }
+.bg-currentColor { background-color: currentColor }
+.bg-transparent { background-color: #fff0 }
+
+.border-white { border-color: #fff }
+.border-silver { border-color: #aaa }
+.border-color1 { border-color: var(--color1) }
+.border-color1-l { border-color: var(--color1-l) }
+.border-transparent { border-color: #fff0 }
+.border-currentColor { border-color: currentColor }
+
+.pre { white-space: pre }
+
+.pointer { cursor: pointer }
+.outline-none { outline: none }
+.appearance-none { appearance: none }
+
+
+.p025 { padding: 0.25rem }  /*used in: VoteChart, VoteResult */
+.break-word {
+  overflow-wrap: break-word;
+  word-break: break-all;
+}  /*used in: votecard, votechart, vote result, */
+.x-small { font-size: x-small }  /*used in: votecard, voteresult  */
+.silver { color: silver } /* used in: votecard */
+
+
+
+
+
+.btn {
+  transition: all 0.3s ease;
+  &:hover, &:disabled {
+    opacity: 0.75;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}

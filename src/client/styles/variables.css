@@ -1,0 +1,8 @@
+:root {
+  --color1: #001f3f; /* primary color */
+  --color1-l: #31466a; /* lighter */
+  --color1-d: #00001a; /* darker */
+
+  --color1-ll: color(var(--color1-l) tint(90%));
+  
+}
